@@ -1,0 +1,63 @@
+{
+    "auth":{
+        "login": "LOGIN",
+        "logout": "Logout",
+        "register": "REGISTER",
+        "signUp": "SIGN UP",
+        "username": "Username",
+        "password": "Password",
+        "email": "Email",
+        "enterUsername": "Enter username",
+        "enterPassword": "Enter password",
+        "enterEmail": "Enter email address",
+        "emptyError": "Field cannot be empty",
+        "emailFormatError": "Wrong Email Format",
+        "authorizeError": "Wrong Username / Password",
+        "usernameExistedError": "Username have already been used",
+        "emailExistedError": "Email have already been used",
+        "registerSuccess": "Your registeration successfully"
+    },
+    "home":{
+        "title":"Welcome to {{name}}",
+        "subtitle": "My Personal Management Platform" 
+    },
+    "menu":{
+        "home":"Home",
+        "taskCreate":"Task Create"
+    },
+    "common":{
+        "start": "Start",
+        "finish": "Finish",
+        "nextStep":"Next",
+        "prevStep": "Back",
+        "day": "Every Day",
+        "week": "Every Week",
+        "once": "Once",
+        "mon": "Monday",
+        "tue": "Tuesday",
+        "wed": "Wednesday",
+        "thu": "Thursday",
+        "fri": "Friday",
+        "sat": "Saturday",
+        "sun": "Sunday",
+        "finished": "Finished",
+        "tryAgain": "Try Again"
+    },
+    "taskCreate":{
+        "start": "Start",
+        "finish": "Finish",
+        "taskNameEnter": "Enter your task name",
+        "taskDetailEnter": "Enter your task detail",
+        "taskDateEnter": "Enter your task date",
+        "taskFreqEnter": "Select your frequency option",
+        "reminderDateEnter": "Select your reminder date",
+        "createNewTask": "Create New Task",
+        "taskNameQuestion":"What is your task Name?",
+        "taskDetailQuestion": "What is your task detail?",
+        "taskDetail":"Task Detail",
+        "taskDateQuestion": "What is your task execution date?",
+        "taskOptionQuestion": "What is your task execution option?",
+        "taskDailyReminderDateQuestion":"What is your daily task reminder date?",
+        "taskOneOffReminderDateQuestion": "What is your task reminder date?"
+    }
+}

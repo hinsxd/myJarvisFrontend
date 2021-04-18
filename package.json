@@ -1,0 +1,61 @@
+{
+  "name": "reactlogin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "^1.3.13",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.3.10",
+    "@tailwindcss/jit": "^0.1.18",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^10.2.5",
+    "axios": "^0.21.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
+    "i18next": "^20.2.1",
+    "i18next-browser-languagedetector": "^6.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.8.13",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "tailwindcss": "^2.1.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch:style":"postcss ./src/style/tailwind.css -o ./src/style/output.css  -w",
+    "build:style": "postcss ./src/style/tailwind.css -o ./src/style/output.css --env prodution ",
+    "build": "npm run build:style && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix --ext .js,.jsx ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

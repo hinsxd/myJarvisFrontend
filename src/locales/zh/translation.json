@@ -1,0 +1,63 @@
+{
+    "auth":{
+        "login": "登入",
+        "logout": "登出",
+        "register": "註冊",
+        "signUp": "註冊",
+        "username": "帳戶名稱",
+        "password": "密碼",
+        "email": "電郵地址",
+        "enterUsername": "請輸入帳戶名稱",
+        "enterPassword": "請輸入密碼",
+        "enterEmail": "請輸入電郵地址",
+        "emptyError": "輸入攔不可以為空",
+        "emailFormatError": "電郵格式錯誤",
+        "authorizeError": "帳戶名稱 / 密碼 錯誤 ",
+        "usernameExistedError": "帳戶名稱已被使用",
+        "emailExistedError": "密碼已被使用",
+        "registerSuccess": "註冊成功"
+    },
+    "home":{
+        "title":"歡迎來到 {{name}}",
+        "subtitle":"我的一站式管理平台"   
+    },
+    "menu":{
+        "home":"首頁",
+        "taskCreate":"建立日程"
+    },
+    "common":{
+        "start": "開始",
+        "finish": "完成",
+        "nextStep":"下一步",
+        "prevStep": "上一步",
+        "day": "每天",
+        "week": "每周",
+        "once": "一次",
+        "mon":"星期一",
+        "tue":"星期二",
+        "wed":"星期三",
+        "thu":"星期四",
+        "fri":"星期五",
+        "sat":"星期六",
+        "sun":"星期日",
+        "finished": "已完成",
+        "tryAgain": "再試一次"
+    },
+    "taskCreate":{
+        "start": "開始",
+        "finish": "完成",
+        "taskNameEnter": "輸入你的日程名稱",
+        "taskDetailEnter": "輸入你的日程詳情",
+        "taskDateEnter": "輸入你的日程日期",
+        "taskFreqEnter": "選擇你的提示頻率",
+        "reminderDateEnter": "選擇你的提示日期",
+        "createNewTask": "建立新的日程",
+        "taskNameQuestion": "你的日程名稱是?",
+        "taskDetailQuestion": "你的日程詳情是?",
+        "taskDetail":"日程詳情",
+        "taskDateQuestion": "你的日程日期是?",
+        "taskOptionQuestion": "你的提示頻率是?",
+        "taskDailyReminderDateQuestion":"你的日常提示日期是?",
+        "taskOneOffReminderDateQuestion": "你的提示日期是?"
+    }
+}
