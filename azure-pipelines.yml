@@ -8,7 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
+  name: Default
+  demands:
+  - agent.name -equals myJarvisVm
 steps:
 - task: NodeTool@0
   inputs:
