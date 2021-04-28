@@ -3,7 +3,7 @@ import { TextField, Button } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import { useSelector, useDispatch } from "react-redux";
 import { registerUserAction, showAuthErrorBox } from "../../redux/actions/auth";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 const EMAIL_REGEXP = new RegExp("^\\w+@([a-z]+\\.)+[a-z]{2,4}$");
 
