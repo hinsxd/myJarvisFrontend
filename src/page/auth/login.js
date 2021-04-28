@@ -73,7 +73,7 @@ const Login = () => {
         variant="contained"
         color="secondary"
         type="submit"
-        disabled={isInputValid}
+        disabled={!isInputValid}
       >
         {t("auth.login")}
       </Button>

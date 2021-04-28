@@ -87,7 +87,7 @@ const Register = () => {
         variant="contained"
         color="secondary"
         type="submit"
-        disabled={isInputValid}
+        disabled={!isInputValid}
       >
         {t("auth.signUp")}
       </Button>
