@@ -31,14 +31,8 @@ const Login = () => {
     dispatch(loginAction(username, password));
   };
 
-  const validateInput = () => {
-    const usernameWithoutSpace = username.trim();
-    const passwordWithoutSpace = password.trim();
-    if (usernameWithoutSpace !== "" && passwordWithoutSpace !== "") {
-      return false;
-    }
-    return true;
-  };
+  const isInputValid = username.trim() !== "" && password.trim() !== "";
+
 
   return (
     <form
@@ -79,7 +73,7 @@ const Login = () => {
         variant="contained"
         color="secondary"
         type="submit"
-        disabled={validateInput()}
+        disabled={isInputValid}
       >
         {t("auth.login")}
       </Button>

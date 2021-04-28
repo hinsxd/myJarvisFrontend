@@ -3,7 +3,10 @@ import { TextField, Button } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import { useSelector, useDispatch } from "react-redux";
 import { registerUserAction, showAuthErrorBox } from "../../redux/actions/auth";
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
+
+const EMAIL_REGEXP = new RegExp("^\\w+@([a-z]+\\.)+[a-z]{2,4}$");
+
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -28,18 +31,10 @@ const Register = () => {
     dispatch(registerUserAction(username, email, password));
   };
 
-
-  const validateInput = () => {
-    const usernameWithoutSpace = username.trim();
-    const passwordWithoutSpace = password.trim();
-    const emailWithoutSpace = email.trim();
-    const emailFormat = new RegExp("^\\w+@([a-z]+\\.)+[a-z]{2,4}$");
-    const isEmailFormatCorrect = emailFormat.test(emailWithoutSpace);
-    if(usernameWithoutSpace !== "" && passwordWithoutSpace !== "" && emailWithoutSpace !== "" && isEmailFormatCorrect === true){
-      return false;
-    }
-    return true;
-  }
+  const isInputValid =
+    username.trim() !== "" &&
+    password.trim() !== "" &&
+    EMAIL_REGEXP.test(email.trim());
 
   return (
     <form
@@ -88,7 +83,12 @@ const Register = () => {
       </div>
       <br />
       <br />
-      <Button variant="contained" color="secondary" type="submit" disabled={validateInput()}>
+      <Button
+        variant="contained"
+        color="secondary"
+        type="submit"
+        disabled={isInputValid}
+      >
         {t("auth.signUp")}
       </Button>
     </form>
