@@ -8,8 +8,9 @@ import AddCircleIcon from "@material-ui/icons/AddCircle";
 import {useTranslation} from "react-i18next"
 const SideMenu = ({ onCloseMenu, isMenuOpen, switchPage }) => {
   const {t} = useTranslation();
-  const list = (onCloseMenu, switchPage) => {
-    return (
+
+  return (
+    <Drawer anchor="left" open={isMenuOpen} onClose={onCloseMenu}>
       <div onKeyDown={onCloseMenu} className="w-56">
         <ListItem button onClick={() => switchPage("home")} className="mt-2">
           <ListItemIcon>
@@ -25,15 +26,9 @@ const SideMenu = ({ onCloseMenu, isMenuOpen, switchPage }) => {
           <ListItemIcon>
             <AddCircleIcon />
           </ListItemIcon>
-          <ListItemText primary={t("menu.taskCreate")}  />
+          <ListItemText primary={t("menu.taskCreate")} />
         </ListItem>
       </div>
-    );
-  };
-
-  return (
-    <Drawer anchor="left" open={isMenuOpen} onClose={onCloseMenu}>
-      {list(onCloseMenu, switchPage)}
     </Drawer>
   );
 };
